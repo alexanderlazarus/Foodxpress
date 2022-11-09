@@ -4,23 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Address</title>
+  <title>Contact Us</title>
+  
 </head>
-<style>
-  *{
-    background-color: #02514b;
-  }
-</style>
 <body>
   <br>
   <center>
-  <form class="gform pure-form pure-form-stacked" method="POST" data-email="hackerspro314@GMAIL.COM"
-  action="https://script.google.com/macros/s/AKfycbyPi1ilrkCVOXxf9Adtrdq53hVxBvL4hOY9Xl3e8_NSz9HzbLdhT97_-pNUiLL_M23LjQ/exec">
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
+  action="">
     <div class="form-elements"><br>
-      <div style="background:none;border:8px solid white;border-radius: 30px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br>
-        <b class="content-head" style="font-size: 2.3em;">Location info!</b>
+      <div style="background:none;border:8px solid gray;border-radius: 30px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br>
+        <b class="content-head" style="font-size: 2.3em;">Contact Us!</b>
         <br><br>
-         <b style="margin-left: -255px;font-size: 1.3em;">State</b><br>
+         <b style="margin-left: -255px;font-size: 1.3em;">Name</b><br>
         <input type="text" name="name" required="" style="font-size: 1em;width: 300px;"/><br><br>
 
         <b style="margin-left: -255px;font-size: 1.3em;">Email</b><br>
@@ -29,8 +25,8 @@
          <b style="margin-left: -255px;font-size: 1.3em;">Phone</b><br>
          <input type="number"  name="phone" required="" style="font-size: 1em;width: 300px;"/><br><br>
       
-        <b style="margin-left: -110px;font-size: 1.3em;">Nearest landmark</b><br>
-        <textarea  name="message" rows="5" cols="22" required="" placeholder="Name of street e.g 111 timber street mile 2 diobu, port harcourt" style="font-size: 1.3em;width: 300px;"></textarea><br><br>
+        <b style="margin-left: -110px;font-size: 1.3em;">How can we help you?</b><br>
+        <textarea  name="message" rows="5" cols="22" required="" style="font-size: 1.3em;width: 300px;"></textarea><br><br>
     
         <button style="float: right;width: 100px;height: 27px;font-size: 1.1em;margin-right: 48px;">
         send</button><br>
@@ -40,7 +36,6 @@
     <!-- Thankyou_message --><br>
     <div class="thankyou_message" style="display:none;background:none;border:8px solid gray;border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
       <h1>Thanks for contacting us!</h1>
-<a href="order.html">continue</a>
       <h1>*******</h1>
     </div>
   </form>
@@ -93,7 +88,7 @@
 
     // add form-specific values into the data
     formData.formDataNameOrder = JSON.stringify(fields);
-    formData.formGoogleSheetName = form.dataset.sheet || "sheet2"; // default sheet name
+    formData.formGoogleSheetName = form.dataset.sheet || "sheetname"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
     console.log(formData);
@@ -158,3 +153,5 @@
 </center>
 </body>
 </html>
+contactus_gmail.txt
+Displaying contactus_gmail.txt.

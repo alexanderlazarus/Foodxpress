@@ -2,18 +2,11 @@
 /* * {
    box-sizing: border-box;
 } */
-
-
-/* my own ooo */
-/* .fuckoff{
-  border-width: 0px;
- border-radius: 30px;
- width: 300px;
- text-align: center;
- border: 2px solid white;
- outline: none;
- box-shadow: 2px 2px 4px white, inset -2px -2px 4px white;
-} */
+*{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
 .footer-col-3{
   margin-left: 60%;
 }
@@ -99,16 +92,6 @@ p{
   position: relative;
   right: 100px;
 }
-.container{
-  max-width: 1300px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25x;
-  background-color: #9e1610;
-}
-.small-container{
-  margin: auto;
-}
 
 .row{
   text-align:center;
@@ -185,8 +168,8 @@ color: #333;
   margin-left: 48px;
   display: none;
   position: relative;
-  bottom: 110px;
-  right: 24px;
+  bottom: 80px;
+  right: 14px;
   
 }
 /* menu query for menu */
@@ -194,22 +177,34 @@ color: #333;
   .follow{
     margin-right: 68%;
    } 
+
+
+   .card__image{
+    height: 20vh;
+   }
   
-  main{
+   .foodxpress{
+    position: relative;
+    top: 4rem;
+    left: 1rem;
+   }
+
+   main{
     max-width: 60%;
     margin-left: auto;
     margin-right: auto; 
     padding: 4px;
   }
 
-
-  ul.join{
+   ul.join{
     display: flex;
     justify-content: space-between;
     width: 37%;
+    height: 100px;
     border-radius: 50%;
     position:relative;
-    left: 10px;
+    left: 130px;
+    
   }
 
 
@@ -230,7 +225,7 @@ color: #333;
     position:absolute;
     top: 90px;
     left:-0px;
-    background: #333;
+    background: black;
     color: #fff;
     width: 90%;
     overflow: hidden;
@@ -260,15 +255,18 @@ color: #333;
     max-width: 400px;
   }
   nav ul li{
+    background-color:black;
     display: block;
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   nav ul li a{
+    background-color: transparent;
 color: #fff;
   }
   .menu-icon{
+    margin-top: 3rem;
     display: block;
     cursor: pointer;
   }
@@ -569,6 +567,7 @@ img {
   margin-right: 600px;
 }
 
+
 .card__title,
 .card__price {
   font-weight: bold;
@@ -597,16 +596,16 @@ img {
   border: 1px solid #b61a12;
   color: #fff;
 }
-.info{
+.inline{
+  visibility: hidden;
  border-radius: 50px;
  width: 20px;
- position: relative;
- top: 4px;
-}
-.card__image{
-  height: 220px;
 }
 
+.card__image{
+  border-radius: 4px;
+  height: 200px;
+}
 .add-to-cart:hover{
 background-color: #ea332a;
 font-size: 17px;
